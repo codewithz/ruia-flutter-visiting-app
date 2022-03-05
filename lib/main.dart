@@ -15,15 +15,20 @@ class MyApp extends StatelessWidget {
        backgroundColor: Colors.deepPurple,
        body: SafeArea(
          child:Column(
-           crossAxisAlignment: CrossAxisAlignment.end,
-           children: <Widget>[
-             Container(
-               width: 300,
-               height: 100,
-               color: Colors.white,
-               child:Text('Container 1')
-             )
-           ],
+          children:<Widget>[
+            CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('images/zartab.jpg'),
+            ),
+            Text(
+              'Zartab Nakhwa',
+              style:TextStyle(
+                color:Colors.white,
+                fontSize: 40,
+                fontWeight: FontWeight.bold
+              )
+            )
+          ],
          )
        ),
      )
